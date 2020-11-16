@@ -19,7 +19,7 @@ jobs:
     - name: Installing surge
       run: npm install --global surge 
     - name: Deploying surge
-      run: surge ./ surging.surge.sh --token ${{secrets.SURGE_TOKEN}} 
+      run: surge ./ surging.surge.sh --token ${{ secrets.SURGE_TOKEN }} 
       # run: |
       #   docker run \
       #   -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
